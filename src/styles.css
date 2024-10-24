@@ -1,1 +1,231 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    font-size:16px;
+}
+body{
+    background-color:#000000;
+    color:#fff;
+    font-family: 'Inconsolata';
+}
+p, li{
+    font-size:1rem;
+}
+::selection {
+    background-color: #EAB308; 
+    color: #000; 
+}
+
+/* Light version of Inconsolata */
+.inconsolata-light {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200; /* Light */
+    font-style: normal;
+    font-variation-settings: 
+      "wdth" 100;
+  }
+  
+  /* Bold version of Inconsolata */
+  .inconsolata-bold {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    font-variation-settings: 
+      "wdth" 100;
+  }
+  
+  /* Custom header style using Inconsolata */
+  .inconsolata-header {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600; /* Semi-bold for headers */
+    font-style: normal;
+    font-variation-settings: 
+      "wdth" 100;
+  }
+  
+
+  /* Light version of Lexend Deca */
+.lexend-deca-light {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100; /* Light */
+    font-style: normal;
+  }
+  
+  /* Regular version of Lexend Deca */
+  .lexend-deca-regular {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  /* Bold version of Lexend Deca */
+  .lexend-deca-bold {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  
+  /* Extra bold version for headers or titles */
+  .lexend-deca-extra-bold {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Extra Bold */
+    font-style: normal;
+  }
+
+  /* General button styling */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* White button */
+.btn-light {
+    background-color: #fff;  
+    color: #000;  
+    border: 1px solid #ddd;  
+}
+
+/* Yellow button */
+.btn-dark {
+    background-color: #EAB308;  
+    color: #fff;  
+}
+
+/* Hover effect for the light button */
+.btn-light:hover {
+    background-color: #EAB308;  
+    color: #fff;  
+}
+
+/* Hover effect for the dark button */
+.btn-dark:hover {
+    background-color: #f5f5f5;  
+    color: #000;  
+}
+
+
+/* Center the glowing circle and give it the effect */
+.glow-circle {
+    background-color: #000;   
+    border-radius: 50%;     
+    padding: 5rem;           
+    margin: 0 auto;          
+    box-shadow: 0 0 1.875rem #fff;  
+    transition: all 0.3s ease-in-out;  
+    animation: pulseGlow 2s infinite;  
+}
+
+/* Hover effect: circle grows and glows more */
+.glow-circle:hover {
+    box-shadow: 0 0 3.75rem #fff;  
+    transform: scale(1.02);      
+}
+
+/* Keyframes for glowing pulse effect */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 1.875rem #fff;
+    }
+    50% {
+        box-shadow: 0 0 2.875rem #fff;  
+    }
+    100% {
+        box-shadow: 0 0 1.875rem #fff;
+    }
+}
+
+.card{
+    background-color:#000;
+    border-color:#fff;
+    color:#fff;
+    
+}
+
+
+#pdf-container {
+    display: none; /* Hide initially */
+    margin-top: 1.25rem;
+}
+  
+
+/* Icon Link Styling */
+.icon-link {
+    background-color: #f8f9fa;  
+    color: #000;                
+    padding: 0.625rem;
+    border-radius: 50%;         
+    margin: 0 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;     
+    font-size: 1.5rem;            
+}
+
+/* Hover effect to change background and icon color */
+.icon-link:hover {
+    background-color: #EAB308; 
+    color: #fff;                
+}
+
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.typed-cursor {
+    color: white;  
+    font-weight: bold; 
+}
+
+div[data-network="twitter"] {
+    display:none!important;              
+}
+
+/* on smaller screens */
+@media (max-width: 1500px) {
+    p{
+        font-size: 0.7rem;
+    }
+    li{
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 768px) {
+    p{
+        font-size: 0.5rem;
+    }
+    li{
+        font-size: 0.7rem;
+    }
+    .btn {
+        font-size: 0.6rem;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+}
+
+a{
+    color: #fff;
+}

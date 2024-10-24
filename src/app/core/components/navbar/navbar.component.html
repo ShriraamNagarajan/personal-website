@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg text-white">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list" style="color:white;"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <div class="d-flex justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                
+                    <!-- About Me -->
+                    <li class="nav-item me-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div>
+                                <img class="img-fluid" src="../../../../assets/images/about-me.svg" alt="About me"/>
+                            </div>
+                            <div>
+                                <a class="nav-link text-white" aria-current="page" [routerLink]="['/about-me']">About Me</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Projects -->
+                    <li class="nav-item me-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center mt-2">
+                            <div>
+                                <img class="img-fluid" src="../../../../assets/images/projects.svg" alt="Projects"/>
+                            </div>
+                            <div>
+                                <a class="nav-link text-white" aria-current="page" [routerLink]="['/projects']">Projects</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+      
+
+                    <!-- Name Branding -->
+                    <li class="nav-item">
+                        <a class="navbar-brand me-5 lexend-deca-bold text-white" href="#">
+                            Shriraam<span style="color:#EAB308;">Nagarajan.</span>
+                        </a>
+                    </li>
+
+                    
+
+                    <!-- Blog -->
+                    <li class="nav-item me-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center mt-2">
+                            <div>
+                                <img class="img-fluid" src="../../../../assets/images/blog.svg" alt="Blog"/>
+                            </div>
+                            <div>
+                                <a class="nav-link text-white" aria-current="page" [routerLink]="['/blog-list']">Blog</a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <!-- Research -->
+                    <li class="nav-item me-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center mt-2">
+                            <div>
+                                <img class="img-fluid" src="../../../../assets/images/research.svg" alt="Resume"/>
+                            </div>
+                            <div>
+                                <a class="nav-link text-white" aria-current="page" [routerLink]="['/research']">Research</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</nav>

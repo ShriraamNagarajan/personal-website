@@ -1,0 +1,40 @@
+<div class="container">
+ 
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="mt-5">
+        <h2 class="text-start lexend-deca-bold mb-5">My <span style="color:#EAB308;">Blogs</span></h2>
+        <div class="row mt-1 g-5">
+            <ng-container *ngIf="blogPosts; else loader">
+                <div *ngFor="let blogPost of blogPosts" class="col-lg-4 col-md-6 col-sm-12 d-flex">
+                    <div class="card text-white h-100" style="background-color:#000;border-color:#fff">
+                        <img [src]="blogPost.featuredImageUrl" class="card-img" alt="Image">
+                        <div class="card-body text-light d-flex flex-column">
+                            <h5 class="card-title" style="color:#EAB308;">{{blogPost.title}}</h5>
+                            <div class="inconsolata-bold">
+                                <span>{{blogPost.author}}</span> &mdash; <span>{{formatPublishedDate(blogPost?.publishedDate)}}</span>
+                            </div>
+                            <p class="card-text mt-3">
+                                {{blogPost.shortDescription}}
+                            </p>
+                     
+                            <a [routerLink]="['/blog/', blogPost.id]" class="btn btn-dark mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+
+            <ng-template #loader>
+                <div class="text-center mt-5">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+        
+       
+    </section>
+
+</div>
+
